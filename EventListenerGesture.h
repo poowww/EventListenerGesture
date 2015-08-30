@@ -45,7 +45,7 @@ public:
     std::function<void(cocos2d::Vec2)> onTap;
     std::function<void(cocos2d::Vec2)> onLongTapBegan;
     std::function<void(cocos2d::Vec2)> onLongTapEnded;
-    std::function<void(SwipeDirection)> onSwipe;
+    std::function<void(SwipeDirection, cocos2d::Vec2)> onSwipe;
 
 protected:
     EventListenerGesture();
