@@ -87,7 +87,7 @@ bool EventListenerGesture::init()
         if(swipeDirection != SwipeDirection::NONE)
         {
             _gestureType = GestureType::SWIPE;
-            if(onSwipe) onSwipe(swipeDirection);
+            if(onSwipe) onSwipe(swipeDirection, Vec2(xDiff, yDiff));
         }
     };
 
